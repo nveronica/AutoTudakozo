@@ -2,9 +2,13 @@ package hu.carinquiry;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
+@ComponentScan
+@EnableJpaRepositories
 public class CarInquryApplication {
 
 	public static void main(String[] args) {
