@@ -11,15 +11,15 @@ th:with="lang=${#locale.language}" th:lang="${lang}">
 </head>
 <body th:style="'background: url(' + @{/images/f40.jpg} + ') no-repeat center center fixed; background-size:100%;'">
 	<div th:insert="fragments/header.html"></div>
-    <div id="login">
-        <form th:action="@{/login}" method="POST">
+    <div id="register">
+        <form th:action="@{/register}" method="POST">
             <label for="username">Felhasználónév</label>
             <input type="text" name="username" autocomplete="off"><br>
             <label for="password">Jelszó</label>
             <input type="password" name="password" autocomplete="off"><br>
-            <button type="submit">Bejelentkezés</button>
+            <button type="submit">Regisztrálok!</button>
         </form>
     </div>
-    <a th:href="@{/register}">Regisztráció</a>
+ 
 </body>
 </html>

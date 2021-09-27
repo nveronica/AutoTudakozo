@@ -9,11 +9,12 @@
 	<div class="navbar navbar-inverse navbar-fixed-right">
 		<div class="container">
 			<div class="navbar-header">
-             <a class="navbar-brand">Autó Tudakozó</a>
+             <a class="navbar-brand" th:href="@{/}">Autó Tudakozó</a>
          	</div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li class="active"><a th:href="@{home}">Home</a></li>
+              <li><a th:href="@{makes}">Makes</a></li>
             </ul>
         </div>
 		</div>
