@@ -11,15 +11,6 @@
 	th:style="'background: url(' + @{/images/f40.jpg} + ') no-repeat center center fixed; background-size:100%;'">
 	<div th:insert="fragments/header.html"></div>
 
-	<table class="cars">
-		<tr>
-			<th>Név</th>
-		</tr>
-		<tbody>
-			<tr th:each="make : ${make}">
-				<td><span th:text="${make.name}"></span></td>
-			</tr>
-		</tbody>
-	</table>
+	Welcome!
 </body>
 </html>

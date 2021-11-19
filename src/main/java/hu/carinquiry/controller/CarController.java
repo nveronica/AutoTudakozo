@@ -5,9 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import hu.carinquiry.service.CarService;
-import lombok.Getter;
 
 @Controller
 public class CarController {
@@ -18,7 +16,7 @@ public class CarController {
 	public String makes(Model model) {
 		
 		model.addAttribute("make", service.findCarByMaked());
-		return "home";
+		return "makes";
 	}
 	@GetMapping("")
 	public String welcomePage() {
